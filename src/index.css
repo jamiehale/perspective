@@ -11,9 +11,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  overflow-x: hidden;
   height: 100%;
-  transform-style: preserve-3d;
-  perspective: 12px;
-
+  overflow-x: hidden;
 }

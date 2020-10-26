@@ -11,6 +11,7 @@ import saon from './assets/saon.svg';
 const TitleImg = styled.img``;
 
 const Container = styled(({ perspective, ...props }) => <div {...props} />)`
+  perspective: 600px;
 
   header {
     position: relative;
@@ -67,14 +68,14 @@ const LayerBundle = styled(({ translateZ, scale, ...props }) => <div {...props} 
     position: absolute;
     height: 60vh;
     z-index: -2;
-    transform: translate(110px, 0px) translateZ(3px) scale(0.9);
+    transform: translate(110px, 0px) translateZ(150px) scale(0.9);
   }
 
   ${TopLayerImg} {
     transform-origin: inherit;
     height: calc(40vh + 5vw);
     z-index: -1;
-    transform: translate(0px, 0px) translateZ(6px) scale(0.5);
+    transform: translate(0px, 0px) translateZ(300px) scale(0.5);
   }
 `;
 
@@ -87,7 +88,7 @@ const TitleBundle = styled.div`
   ${TitleImg} {
     margin-top: 76px;
     height: calc(10vh + 5vw);
-    transform: translate(0px, 0px) translateZ(6px) scale(0.5);
+    transform: translate(0px, 0px) translateZ(300px) scale(0.5);
   }
 `;
 
